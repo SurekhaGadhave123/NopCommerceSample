@@ -18,4 +18,7 @@ class LoginPage:
         self.driver.find_element(By.XPATH,"//button[normalize-space()='Log in']").click()
 
     def clickLogout(self):
-        self.driver.find_element(By.LINK_TEXT,"Logout").click()
+        self.driver.find_element(By.XPATH,"//a[normalize-space()='Logout']").click()
+
+    def clickback(self):
+        self.driver.back()

@@ -4,9 +4,11 @@ from selenium.webdriver.common.service import Service
 
 
 @pytest.fixture()
-def setup(browser):
+def setup():
         driver = webdriver.Chrome(executable_path="C:\\chromedriver_win32\\chromedriver.exe")
-        driver.implicitly_wait(10)
+        return driver
+
+
 
 
 
